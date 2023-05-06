@@ -10,7 +10,7 @@ if(!empty($_POST["email"])) {   /*here we can see that if the field of the email
 		$result =mysqli_query($con,"SELECT email FROM users WHERE email='$email'");
 		$count=mysqli_num_rows($result);
 if($count>0)
-/*  If in the case that the count is higher than the value 0 then the code proceeds the same action    */
+/*  If in the case that count is higher than the value 0 then the code proceeds the same action    */
 
 
 ?>
