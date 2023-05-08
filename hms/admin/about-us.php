@@ -8,6 +8,9 @@ if(strlen($_SESSION['id']==0)) {
 //Code In order to update the content
 //Below we are creating the about us page. 
 
+//In this php code the error reporting is being disbled. It also sends the people/user to the logout page,
+//if the form that has the submit button is sent
+
   	if(isset($_POST['submit']))
   {
    
@@ -24,7 +27,11 @@ $pagedes=$con->real_escape_string($_POST['pagedes']);
     }
   
 }
-
+//There is an html code for the purpose of admin dashboard that has a section for the main content,
+// there is also a header and a side. if you look in the section of the main content, you can see that there,
+//exists a form  with two field, one is called ethe page description and another is called the page title.
+// so will all these, if these forms are submitted, the value that are inside these fields will be updated,
+// within the database of the about us page.
 ?>
 <!DOCTYPE html>
 <html lang="en">
