@@ -5,14 +5,14 @@
  * Improvements by Andrew Rowls
  * Licensed under the Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0)
  */(function($, undefined){
-
+//function for updating the dates
 	function UTCDate(){
 		return new Date(Date.UTC.apply(Date, arguments));
 	}
 	function UTCToday(){
 		var today = new Date();
 		return UTCDate(today.getFullYear(), today.getMonth(), today.getDate());
-	}
+	}//setting a variable and getting a date
 	function isUTCEquals(date1, date2) {
 		return (
 			date1.getUTCFullYear() === date2.getUTCFullYear() &&
@@ -32,8 +32,10 @@
 				return this.slice(i)[0];
 			},
 			contains: function(d){
-				// Array.indexOf is not cross-browser;
-				// $.inArray doesn't work with Dates
+				//Array.indexof which you see here is not a cross browser;
+				//The $.inArray will not work with the dates.
+
+				
 				var val = d && d.valueOf();
 				for (var i=0, l=this.length; i < l; i++)
 					if (this[i].valueOf() === val)
