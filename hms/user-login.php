@@ -16,13 +16,13 @@ $pid=$num['id'];
 $host=$_SERVER['HTTP_HOST'];
 $uip=$_SERVER['REMOTE_ADDR'];
 $status=1;
-// For stroing log if user login successfull
+//this is for storing the log if the user login in successfull
 $log=mysqli_query($con,"insert into userlog(uid,username,userip,status) values('$pid','$puname','$uip','$status')");
 header("location:dashboard.php");
 }
 else
 {
-// For stroing log if user login unsuccessfull
+//This is for storing the log if the user login in unsucessful
 $_SESSION['login']=$_POST['username'];	
 $uip=$_SERVER['REMOTE_ADDR'];
 $status=0;
