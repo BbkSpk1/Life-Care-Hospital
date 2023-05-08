@@ -1,12 +1,18 @@
 
 <?php
-include_once('hms/include/config.php');
+include_once('hms/include/config.php'); //the php code below handles a submission for the form
+//so what the below code does it that this clicks if the submit button has been pressed. it does
+//that by checking that if the $_POST['submit'] variable has been set. if that is the case, the
+//what this does it that code will then be extracted from the form data which is submitted by our
+//user by use of $_POST global variable. Please do reach out to the project manger for further clarification
 if(isset($_POST['submit']))
 {
 $name=$_POST['fullname'];
 $email=$_POST['emailid'];
 $mobileno=$_POST['mobileno'];
 $dscrption=$_POST['description'];
+//after the use of the php code, you can also see the html code which is being used for the purpose
+//of displaying the slider, header and sections which has the login links that can be used for the users
 $query=mysqli_query($con,"insert into tblcontactus(fullname,email,contactno,message) value('$name','$email','$mobileno','$dscrption')");
 echo "<script>alert('Your information succesfully submitted');</script>";
 echo "<script>window.location.href ='index.php'</script>";
@@ -347,7 +353,7 @@ echo "<script>window.location.href ='index.php'</script>";
     </section><!-- End Gallery Section -->
 
     
-     <!--  ************************* Contact Us Starts Here ************************** -->
+     <!--  ************************* Contact Us Starts Here ************************** --> //jh
     
     <section id="contact_us" class="contact-us-single">
         <div class="row no-margin">
