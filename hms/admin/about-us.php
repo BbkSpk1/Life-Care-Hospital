@@ -5,7 +5,8 @@ include('include/config.php');
 if(strlen($_SESSION['id']==0)) {
  header('location:logout.php');
   } else{
-//Code for Update the Content
+//Code In order to update the content
+//Below we are creating the about us page. 
 
   	if(isset($_POST['submit']))
   {
@@ -120,7 +121,7 @@ while ($row=mysqli_fetch_array($ret)) {
 	<?php include('include/setting.php');?>
 			
 			<!-- end: SETTINGS -->
-		</div>
+		</div>  //javascript code is being added on the bottom
 		<!-- start: MAIN JAVASCRIPTS -->
 		<script src="vendor/jquery/jquery.min.js"></script>
 		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
