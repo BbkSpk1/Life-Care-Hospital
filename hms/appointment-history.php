@@ -1,8 +1,8 @@
 <?php
 session_start();
 error_reporting(0);
-include('include/config.php');
-if(strlen($_SESSION['id']==0)) {
+include('include/config.php'); //in this page we write include the appointment history
+if(strlen($_SESSION['id']==0)) { //being able to see the appointment after making it. 
  header('location:logout.php');
   } else{
 if(isset($_GET['cancel']))
