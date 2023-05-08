@@ -5,7 +5,7 @@ include('include/config.php');
 if(strlen($_SESSION['id']==0)) {
  header('location:logout.php');
   } else{
-//Code for Update the Content
+//This is the code in order to update the content
 
 if(isset($_POST['submit']))
   {

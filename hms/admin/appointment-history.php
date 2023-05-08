@@ -1,5 +1,5 @@
 <?php
-session_start();
+session_start(); //the below code deals with all the appointment history. 
 error_reporting(0);
 include('include/config.php');
 if(strlen($_SESSION['id']==0)) {

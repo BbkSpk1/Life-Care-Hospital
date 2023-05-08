@@ -6,7 +6,7 @@ if(strlen($_SESSION['id']==0)) {
  header('location:logout.php');
   } else{
 
-date_default_timezone_set('Asia/Kolkata');// change according timezone
+date_default_timezone_set('Asia/Kolkata');// This changes the time according to the time zone
 $currentTime = date( 'd-m-Y h:i:s A', time () );
 if(isset($_POST['submit']))
 {
