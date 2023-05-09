@@ -6,6 +6,7 @@ if(strlen($_SESSION['id']==0)) {
  header('location:logout.php');
   } else{
 
+//This is a dashboard page for the php which will be used for dashboard crteria 
 
 ?>
 <!DOCTYPE html>
@@ -173,21 +174,21 @@ $num_rows22 = mysqli_num_rows($sql);
 						
 						
 					
-						<!-- end: SELECT BOXES -->
+						<!-- End: this is where the box is selected -->
 						
 					</div>
 				</div>
 			</div>
-			<!-- start: FOOTER -->
+			<!-- This is the start of the footer -->
 	<?php include('include/footer.php');?>
 			<!-- end: FOOTER -->
 		
-			<!-- start: SETTINGS -->
+			<!-- This is the start of the settings. -->
 	<?php include('include/setting.php');?>
 		
 			<!-- end: SETTINGS -->
 		</div>
-		<!-- start: MAIN JAVASCRIPTS -->
+		<!-- start: This is the javascript maincode  -->
 		<script src="vendor/jquery/jquery.min.js"></script>
 		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 		<script src="vendor/modernizr/modernizr.js"></script>
