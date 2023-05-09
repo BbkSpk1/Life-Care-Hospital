@@ -6,7 +6,9 @@ if(strlen($_SESSION['id']==0)) {
  header('location:logout.php');
   } else{
 //Code In order to update the content
-//Below we are creating the about us page. 
+//Below we are creating the about us page and fixing some of the code error. 
+/*We have currently solved the bug issue on our about us page so which the code was not working,
+*/
 
 //In this php code the error reporting is being disbled. It also sends the people/user to the logout page,
 //if the form that has the submit button is sent
