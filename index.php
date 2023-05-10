@@ -58,7 +58,7 @@ echo "<script>window.location.href ='index.php'</script>";
         </div>
     </header>
     
-     <!-- ################# Slider Starts Here#######################--->
+     <!-- ################# This slider starts here #######################--->
 
     <div class="slider-detail">
 
