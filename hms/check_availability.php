@@ -11,6 +11,15 @@ if(!empty($_POST["email"])) {   /*here we can see that if the field of the email
 		$count=mysqli_num_rows($result);
 if($count>0)
 /*  If in the case that count is higher than the value 0 then the code proceeds the same action    */
-
+{
+	echo "<span style='color:red'> Email already exists .</span>";
+	 echo "<script>$('#submit').prop('disabled',true);</script>";
+	} else{
+		
+		echo "<span style='color:green'> Email available for Registration .</span>";
+	 echo "<script>$('#submit').prop('disabled',false);</script>";
+	}
+	}
+	
 
 ?>
