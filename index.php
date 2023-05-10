@@ -324,6 +324,14 @@ echo "<script>window.location.href ='index.php'</script>";
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
+              <a href="hospital.jpeg" class="gallery-lightbox">
+                <img src="hospital.jpeg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
               <a href="admin.jpg" class="gallery-lightbox">
                 <img src="admins.jpg" alt="" class="img-fluid">
               </a>
