@@ -4,9 +4,7 @@ include_once('hms/include/config.php');
 if(isset($_POST['submit']))
 {
 $name=$_POST['fullname'];
-$email=$_POST['emailid'];
-$mobileno=$_POST['mobileno'];
-$dscrption=$_POST['description'];
+$email=$_POST['emilid'];
 $query=mysqli_query($con,"insert into tblcontactus(fullname,email,contactno,message) value('$name','$email','$mobileno','$dscrption')");
 echo "<script>alert('Your information succesfully submitted');</script>";
 echo "<script>window.location.href ='index.php'</script>";
@@ -30,6 +28,8 @@ echo "<script>window.location.href ='index.php'</script>";
     <body>
 
     <!-- ################# This header is starting Here####### ################--->
+    <!--   Below we have addded the html code and also after using our php code, html code is being
+    used to display header, slider and login links   --->
     
       <header id="menu-jk">
     
