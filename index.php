@@ -269,10 +269,7 @@ echo "<script>window.location.href ='index.php'</script>";
             <p class="fst-italic">
               Life Care Hospital is a modern medical facility committed to providing exceptional healthcare services to our patients. Our experienced and compassionate staff use the latest technologies to deliver accurate diagnoses and effective treatments in a safe and comfortable environment. Thank you for choosing Life Care Hospital for your healthcare needs.
             </p>
-<!--             <ul>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-            </ul>
-             -->
+
           </div>
         </div>
 
