@@ -183,10 +183,7 @@ $num_rows22 = mysqli_num_rows($sql);
 	<?php include('include/footer.php');?>
 			<!-- end: FOOTER -->
 		
-			<!-- This is the start of the settings. -->
-	<?php include('include/setting.php');?>
-		
-			<!-- end: SETTINGS -->
+
 		</div>
 		<!-- start: This is the javascript maincode  -->
 		<script src="vendor/jquery/jquery.min.js"></script>
