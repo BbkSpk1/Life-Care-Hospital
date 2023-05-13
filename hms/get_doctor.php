@@ -1,6 +1,6 @@
 <?php
 include('include/config.php');
-if(!empty($_POST["specilizationid"])) 
+if(!empty($_POST["specilizationid"])) //below this helps to select the doctor and from which specialization they are and where to be allocated on our system. 
 {
 
  $sql=mysqli_query($con,"select doctorName,id from doctors where specilization='".$_POST['specilizationid']."'");?>

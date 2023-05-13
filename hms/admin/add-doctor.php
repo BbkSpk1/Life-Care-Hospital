@@ -1,8 +1,8 @@
 <?php
-session_start();
-error_reporting(0);
-include('include/config.php');
-if(strlen($_SESSION['id']==0)) {
+session_start(); //below are all the php code that are used for the purpose of performing certain tasks,
+error_reporting(0); //such as being able to add a new doctor to the system which is heavily necessary on our,
+include('include/config.php'); //hospital management system. it includes a configation file and sets the reporting of the error to zero
+if(strlen($_SESSION['id']==0)) { //the success messege appears on the screen if the data has been entered succesfully, then the user also gets redirected to the page of manage-doctors.php
  header('location:logout.php');
   } else{
 
@@ -21,8 +21,9 @@ echo "<script>alert('Doctor info added Successfully');</script>";
 echo "<script>window.location.href ='manage-doctors.php'</script>";
 
 }
-}
-?>
+}  //for the html code this generates a form which has many different fields for input such as field from details of the detors, name, fess, data of birth, etc.
+//This also has javascript files and css for the purpose of form validating and styling. 
+?>  
 <!DOCTYPE html>
 <html lang="en">
 	<head>

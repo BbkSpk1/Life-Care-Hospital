@@ -1,6 +1,6 @@
 <?php
 session_start();
-//error_reporting(0);
+//the error_reporting(0);
 include('include/config.php');
 include('include/checklogin.php');
 check_login();
@@ -117,10 +117,7 @@ check_login();
 	<?php include('include/footer.php');?>
 			<!-- end: FOOTER -->
 		
-			<!-- start: SETTINGS -->
-	<?php include('include/setting.php');?>
-			<>
-			<!-- end: SETTINGS -->
+
 		</div>
 		<!-- start: MAIN JAVASCRIPTS -->
 		<script src="vendor/jquery/jquery.min.js"></script>

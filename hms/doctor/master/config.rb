@@ -1,6 +1,7 @@
-# Require any additional compass plugins here.
 
-# Set this to the root of your project when deployed:
+# You can Require any additional compass plugins here.
+
+# You also set this to be at the root of the project when this is being deployed:
 
 http_path = "/"
 
@@ -13,11 +14,13 @@ images_dir = "../assets/images"
 javascripts_dir = "../assets/js"
 
 line_comments = false
-# You can select your preferred output style here (can be overridden via the command line):
+#you can select the preferred syle of the output here and that can be overridden with the use of command line:
 # output_style = :expanded or :nested or :compact or :compressed
 output_style = :expanded
-# To enable relative paths to assets via compass helper functions.
+
+#this is for enabling the realtive paths to the assets through compass helper functions.
 #Uncomment:
 # relative_assets = true
-# To disable debugging comments that display the original location of your selectors. Uncomment:
+#this is for the purpose o f disabling the debussing comments which displays the original locations of your selectors.
+
 # line_comments = false

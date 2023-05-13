@@ -1,12 +1,18 @@
 
 <?php
-include_once('hms/include/config.php');
+include_once('hms/include/config.php'); //the php code below handles a submission for the form
+//so what the below code does it that this clicks if the submit button has been pressed. it does
+//that by checking that if the $_POST['submit'] variable has been set. if that is the case, the
+//what this does it that code will then be extracted from the form data which is submitted by our
+//user by use of $_POST global variable. Please do reach out to the project manger for further clarification
 if(isset($_POST['submit']))
 {
 $name=$_POST['fullname'];
 $email=$_POST['emailid'];
 $mobileno=$_POST['mobileno'];
 $dscrption=$_POST['description'];
+//after the use of the php code, you can also see the html code which is being used for the purpose
+//of displaying the slider, header and sections which has the login links that can be used for the users
 $query=mysqli_query($con,"insert into tblcontactus(fullname,email,contactno,message) value('$name','$email','$mobileno','$dscrption')");
 echo "<script>alert('Your information succesfully submitted');</script>";
 echo "<script>window.location.href ='index.php'</script>";
@@ -263,10 +269,7 @@ echo "<script>window.location.href ='index.php'</script>";
             <p class="fst-italic">
               Life Care Hospital is a modern medical facility committed to providing exceptional healthcare services to our patients. Our experienced and compassionate staff use the latest technologies to deliver accurate diagnoses and effective treatments in a safe and comfortable environment. Thank you for choosing Life Care Hospital for your healthcare needs.
             </p>
-<!--             <ul>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-            </ul>
-             -->
+
           </div>
         </div>
 
@@ -318,6 +321,14 @@ echo "<script>window.location.href ='index.php'</script>";
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
+              <a href="hospital.jpeg" class="gallery-lightbox">
+                <img src="hospital.jpeg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
               <a href="admin.jpg" class="gallery-lightbox">
                 <img src="admins.jpg" alt="" class="img-fluid">
               </a>
@@ -347,7 +358,7 @@ echo "<script>window.location.href ='index.php'</script>";
     </section><!-- End Gallery Section -->
 
     
-     <!--  ************************* Contact Us Starts Here ************************** -->
+     <!--  ************************* Contact Us Starts Here ************************** --> //jh
     
     <section id="contact_us" class="contact-us-single">
         <div class="row no-margin">

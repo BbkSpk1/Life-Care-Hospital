@@ -5,7 +5,13 @@ include('include/config.php');
 if(strlen($_SESSION['id']==0)) {
  header('location:logout.php');
   } else{
-//Code for Update the Content
+//Code In order to update the content
+//Below we are creating the about us page and fixing some of the code error. 
+/*We have currently solved the bug issue on our about us page so which the code was not working,
+*/
+
+//In this php code the error reporting is being disbled. It also sends the people/user to the logout page,
+//if the form that has the submit button is sent
 
   	if(isset($_POST['submit']))
   {
@@ -23,7 +29,11 @@ $pagedes=$con->real_escape_string($_POST['pagedes']);
     }
   
 }
-
+//There is an html code for the purpose of admin dashboard that has a section for the main content,
+// there is also a header and a side. if you look in the section of the main content, you can see that there,
+//exists a form  with two field, one is called ethe page description and another is called the page title.
+// so will all these, if these forms are submitted, the value that are inside these fields will be updated,
+// within the database of the about us page.
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -120,7 +130,7 @@ while ($row=mysqli_fetch_array($ret)) {
 	<?php include('include/setting.php');?>
 			
 			<!-- end: SETTINGS -->
-		</div>
+		</div>  //javascript code is being added on the bottom
 		<!-- start: MAIN JAVASCRIPTS -->
 		<script src="vendor/jquery/jquery.min.js"></script>
 		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>

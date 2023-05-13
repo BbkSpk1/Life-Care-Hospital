@@ -1,32 +1,34 @@
 <?php
-session_start();
-error_reporting(0);
-include("include/config.php");
-if(isset($_POST['submit']))
+session_start();   //this marks the initiation of the php session for the purpose of storing the variable across many different pages.
+error_reporting(0);  //this code switches off the error reporting, so that the error are not shown on our hospital management system webpage.
+include("include/config.php");  //this has the file of configutation that has the details of the database connection associated with it. 
+if(isset($_POST['submit'])) //this if statement is used to check if the login form has been submitted or not 
 {
-$uname=$_POST['username'];
-$upassword=$_POST['password'];
+$uname=$_POST['username']; //this line of code gets the username that has been written by our user inside of the login form. 
+$upassword=$_POST['password']; //
 
-$ret=mysqli_query($con,"SELECT * FROM admin WHERE username='$uname' and password='$upassword'");
-$num=mysqli_fetch_array($ret);
-if($num>0)
+$ret=mysqli_query($con,"SELECT * FROM admin WHERE username='$uname' and password='$upassword'");/* this is used for asking 
+the database to look if the password and username that are entered is correct or not.*/
+$num=mysqli_fetch_array($ret); //this gets the result for the query but as an array
+if($num>0) //this if statement if here to check wheather inside the array there is any elements or not.
 {
-$_SESSION['login']=$_POST['username'];
-$_SESSION['id']=$num['id'];
-header("location:dashboard.php");
+$_SESSION['login']=$_POST['username'];//this is used for the purpose of storung username in the variable login session. 
+$_SESSION['id']=$num['id'];  //this stores the user id in the session of the variable called the id. 
+header("location:dashboard.php"); //this send the customer/user to the dashboard.php incase the password and username both are not correct. 
+
 
 }
 else
 {
-$_SESSION['errmsg']="Invalid username or password";
+$_SESSION['errmsg']="Invalid username or password"; //
 
 }
 }
 ?>
 
 
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- This marks the start of an html document   -->
+<html lang="en">  <!-- This code sets the webpage language to english   -->
 	<head>
 		<title>Admin-Login</title>
 		<meta charset="utf-8" />
