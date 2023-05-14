@@ -30,6 +30,8 @@ echo "<script>window.location.href ='index.php'</script>";
     <body>
 
     <!-- ################# This header is starting Here####### ################--->
+    <!--   Below we have addded the html code and also after using our php code, html code is being
+    used to display header, slider and login links   --->
     
       <header id="menu-jk">
     
@@ -58,7 +60,7 @@ echo "<script>window.location.href ='index.php'</script>";
         </div>
     </header>
     
-     <!-- ################# Slider Starts Here#######################--->
+     <!-- ################# This slider starts here #######################--->
 
     <div class="slider-detail">
 
@@ -108,7 +110,7 @@ echo "<script>window.location.href ='index.php'</script>";
 
     </div>
     
-  <!--  ************************* Logins ************************** -->
+  <!--  ************************* Login from here ************************** -->
     
     
      <section id="logins" class="our-blog container-fluid">
